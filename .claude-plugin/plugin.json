@@ -1,7 +1,7 @@
 {
   "name": "nia",
   "version": "1.0.0",
-  "description": "Nia Knowledge Agent - Index and search external repositories, documentation, packages, and research papers. Reduces hallucinations by providing up-to-date context.",
+  "description": "Nia",
   "author": "Nozomio Labs",
   "homepage": "https://github.com/nozomio-labs/nia-plugin",
   "license": "MIT",

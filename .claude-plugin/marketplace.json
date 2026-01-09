@@ -2,21 +2,21 @@
   "name": "nia-plugin",
   "owner": {
     "name": "Nozomio Labs",
-    "email": "support@nozomio.com"
+    "email": "founders@nozomio.com"
   },
   "metadata": {
-    "description": "Nia Knowledge Agent for Claude Code - Index and search external documentation, repos, and packages",
+    "description": "Nia",
     "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "nia",
       "source": "./",
-      "description": "Nia Knowledge Agent - Index and search external repositories, documentation, packages, and research papers. Reduces hallucinations by providing up-to-date context.",
+      "description": "Nia",
       "version": "1.0.0",
       "author": {
         "name": "Nozomio Labs",
-        "email": "support@nozomio.com"
+        "email": "founders@nozomio.com"
       },
       "license": "MIT",
       "keywords": ["documentation", "search", "indexing", "research", "context", "mcp", "knowledge"],
