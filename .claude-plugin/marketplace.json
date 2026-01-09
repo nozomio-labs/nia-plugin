@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "nia",
-      "source": ".",
+      "source": "./",
       "description": "Nia Knowledge Agent - Index and search external repositories, documentation, packages, and research papers. Reduces hallucinations by providing up-to-date context.",
       "version": "1.0.0",
       "author": {
