@@ -2,7 +2,10 @@
   "name": "nia",
   "version": "1.0.0",
   "description": "Nia",
-  "author": "Nozomio Labs",
+  "author": {
+    "name": "Nozomio Labs",
+    "email": "founders@nozomio.com"
+  },
   "homepage": "https://github.com/nozomio-labs/nia-plugin",
   "license": "MIT",
   "keywords": [
@@ -13,12 +16,5 @@
     "context",
     "mcp",
     "knowledge"
-  ],
-  "categories": [
-    "External Integrations",
-    "Development Workflows"
-  ],
-  "requirements": {
-    "mcp_servers": ["nia"]
-  }
+  ]
 }
