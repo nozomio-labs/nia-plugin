@@ -39,29 +39,19 @@ Nia provides tools for indexing and searching external repositories, research pa
 
 ### Scripts
 
-| Script | Description |
-|--------|-------------|
-| `repos-list.sh` | List indexed repositories |
-| `repos-index.sh` | Index a GitHub repository |
-| `repos-tree.sh` | Get repository file tree |
-| `repos-read.sh` | Read file from repository |
-| `repos-grep.sh` | Search code in repository |
-| `sources-list.sh` | List indexed data sources |
-| `sources-index.sh` | Index documentation URL |
-| `sources-tree.sh` | Get source tree |
-| `sources-read.sh` | Read from source |
-| `papers-list.sh` | List indexed papers |
-| `papers-index.sh` | Index arXiv paper |
-| `datasets-list.sh` | List HuggingFace datasets |
-| `datasets-index.sh` | Index HuggingFace dataset |
-| `search-universal.sh` | Search all indexed sources |
-| `search-web.sh` | Web search |
-| `search-deep.sh` | Deep research (Pro) |
-| `package-grep.sh` | Search package source code |
-| `global-subscribe.sh` | Subscribe to public source |
-| `oracle.sh` | Run autonomous research (Pro) |
+| Category | Scripts |
+|----------|---------|
+| **Repositories** | `repos-list.sh`, `repos-index.sh`, `repos-tree.sh`, `repos-read.sh`, `repos-grep.sh`, `repos-status.sh` |
+| **Data Sources** | `sources-list.sh`, `sources-index.sh`, `sources-tree.sh`, `sources-ls.sh`, `sources-read.sh`, `sources-grep.sh` |
+| **Research Papers** | `papers-list.sh`, `papers-index.sh` |
+| **HuggingFace Datasets** | `datasets-list.sh`, `datasets-index.sh` |
+| **Search** | `search-query.sh`, `search-universal.sh`, `search-web.sh`, `search-deep.sh` |
+| **Package Search** | `package-grep.sh`, `package-hybrid.sh`, `package-read.sh` |
+| **Global Sources** | `global-subscribe.sh` |
+| **Oracle Research** | `oracle.sh`, `oracle-job.sh`, `oracle-job-status.sh`, `oracle-jobs-list.sh`, `oracle-sessions.sh` |
+| **Usage** | `usage.sh` |
 
-## Usage
+## Usage Examples
 
 ```bash
 # List indexed repositories
@@ -78,7 +68,38 @@ Nia provides tools for indexing and searching external repositories, research pa
 
 # Grep repository code
 ./scripts/repos-grep.sh "vercel/ai" "streamText"
+
+# Query specific repos/docs
+./scripts/search-query.sh "explain hooks" "facebook/react,vercel/next.js" "React Docs"
+
+# Index an arXiv paper
+./scripts/papers-index.sh "2312.00752"
+
+# Index a HuggingFace dataset
+./scripts/datasets-index.sh "squad"
+
+# Run Oracle research job
+./scripts/oracle-job.sh "compare React vs Vue state management"
+
+# Check API usage
+./scripts/usage.sh
 ```
+
+## Source Types
+
+| Type | Index Method | Identifier Formats |
+|------|--------------|-------------------|
+| Repository | `repos-index.sh` | `owner/repo` |
+| Documentation | `sources-index.sh` | `https://docs.example.com` |
+| Research Paper | `papers-index.sh` | `2312.00752`, arXiv URL |
+| HuggingFace Dataset | `datasets-index.sh` | `squad`, `owner/dataset` |
+
+## Flexible Identifiers
+
+Most data source endpoints accept:
+- **UUID**: `550e8400-e29b-41d4-a716-446655440000`
+- **Display name**: `Vercel AI SDK - Core`, `openai/gsm8k`
+- **URL**: `https://docs.trynia.ai/`, `https://arxiv.org/abs/2312.00752`
 
 ## Documentation
 
