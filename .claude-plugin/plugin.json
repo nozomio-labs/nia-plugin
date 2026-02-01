@@ -1,12 +1,12 @@
 {
   "name": "nia",
   "version": "1.0.0",
-  "description": "Nia",
+  "description": "Index and search code repositories, documentation, research papers, and HuggingFace datasets with Nia AI.",
   "author": {
     "name": "Nozomio Labs",
     "email": "founders@nozomio.com"
   },
-  "homepage": "https://github.com/nozomio-labs/nia-plugin",
+  "homepage": "https://trynia.ai",
   "license": "MIT",
   "keywords": [
     "documentation",
@@ -14,7 +14,9 @@
     "indexing",
     "research",
     "context",
-    "mcp",
-    "knowledge"
+    "code",
+    "repositories",
+    "papers",
+    "datasets"
   ]
 }

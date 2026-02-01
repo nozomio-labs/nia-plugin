@@ -5,21 +5,21 @@
     "email": "founders@nozomio.com"
   },
   "metadata": {
-    "description": "Nia",
+    "description": "Index and search code repositories, documentation, research papers, and HuggingFace datasets with Nia AI.",
     "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "nia",
       "source": "./",
-      "description": "Nia",
+      "description": "Index and search code repositories, documentation, research papers, and HuggingFace datasets with Nia AI.",
       "version": "1.0.0",
       "author": {
         "name": "Nozomio Labs",
         "email": "founders@nozomio.com"
       },
       "license": "MIT",
-      "keywords": ["documentation", "search", "indexing", "research", "context", "mcp", "knowledge"],
+      "keywords": ["documentation", "search", "indexing", "research", "context", "code", "repositories", "papers", "datasets"],
       "category": "External Integrations"
     }
   ]
